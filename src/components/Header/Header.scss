@@ -1,0 +1,65 @@
+@import "src/var";
+
+.header{
+  width: 100%;
+  height: 89px;
+  padding: 26px 56px;
+
+  box-shadow: 0 3.61062px 9.02655px rgba(0, 0, 0, 0.05);
+}
+.header_title{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  color: $dark-blue-color;
+}
+
+.header_menu-link{
+  justify-content: center;
+  flex-direction: column;
+
+  height: 88px;
+  padding: 15px;
+  margin: 0 25px;
+
+  font-size: 18px;
+  line-height: 25px;
+  color: $gray-color;
+  position: relative;
+
+  &:hover::after{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: $dark-blue-color;
+
+    transition: transform .2s linear, background-color 0.5s linear;
+    transform: scaleX(0);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &.active{
+    font-weight: 600;
+    color: $dark-blue-color;
+    cursor: default;
+
+    &:after{
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

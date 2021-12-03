@@ -1,0 +1,56 @@
+@import "var";
+
+#root{
+  width: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+
+  background-color: #FFFFFF;
+
+  &, a{
+    font-family:'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.392308px;
+    color: $gray-color;
+  }
+}
+
+
+////// SCROLL \\\\\\
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+//////  _____  \\\\\\
+
+
+
+.app{
+  display: flex;
+  justify-content: space-between;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+.flex{
+  display: flex;
+  align-items: center;
+}

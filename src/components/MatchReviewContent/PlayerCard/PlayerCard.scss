@@ -1,0 +1,47 @@
+@import "src/var";
+
+.player-card{
+  display: flex;
+  overflow: hidden;
+
+  width: 270px;
+  height: 92px;
+  margin-right: 10px;
+  padding-right: 7px;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.rating{
+  height: fit-content;
+  padding: 3px 4px;
+  background-color: #6CDC9D;
+
+  font-size: 16px;
+  line-height: 26px;
+  color: $white;
+}
+
+.person-data__wrapper{
+  display: flex;
+  align-items: flex-end;
+}
+.person-data{
+  padding-bottom: 12px;
+}
+.player-name{
+  color: $dark-blue-color;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+
+/// btn download
+
+.player-card_download-btn{
+  width: 57px;
+  height: 57px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  background-color: $orange-color;
+}
